@@ -35,6 +35,16 @@ function App() {
       <Expenses items={expenses}/>
     </div>
   );
+
+  // *
+  // *
+  // * vecchio modo di scrivere html, importando React in ogni componente invece di ReactDom nell'index.js
+
+  // return React.createElement(
+  //   'div',
+  //   React.createElement('h2', {}, 'Let\'s get started!'),
+  //   React.createElement(Expenses, {items: expenses})
+  // )
 }
 
 export default App;
