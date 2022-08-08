@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-import "./css/NewExpense.css";
+import "./css/ExpenseForm.css";
 
-const ExpenseForm = () => {
+const ExpenseForm = (props) => {
   const [enteredTitle, setEnteredTitle] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
   const [enteredAmount, setEnteredAmount] = useState("");
@@ -40,7 +40,8 @@ const ExpenseForm = () => {
       date: new Date(enteredDate),
     };
 
-    console.log(expenseData);
+    // per passare expenseData a NewExpense.js
+    props.onSaveExpenseData(expenseData);
     
     // per svuotare il form dopo aver premuto submit
     setEnteredTitle("");
