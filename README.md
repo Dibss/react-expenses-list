@@ -4,6 +4,6 @@ Made with:
 - SCSS
 - JavaScript
 
-DEMO (work in progress):
+DEMO:
 
 https://dibss.github.io/react-expenses-list/
